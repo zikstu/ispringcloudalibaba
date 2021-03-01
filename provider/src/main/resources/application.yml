@@ -1,0 +1,19 @@
+server:
+  port: 8201
+spring:
+  application:
+    name: provider
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+       transport:
+         dashboard: localhost:8858
+       filter:
+         enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

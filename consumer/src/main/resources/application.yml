@@ -1,0 +1,13 @@
+server:
+  port: 8204
+spring:
+  application:
+    name: consumer
+  cloud:
+    nacos:
+      discovery:
+       server-addr: localhost:8848
+
+provider:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.xuezhang.config.NacosWighteRule
