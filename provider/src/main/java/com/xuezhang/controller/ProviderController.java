@@ -45,4 +45,16 @@ public class ProviderController {
         this.providerService.test();
         return "test2";
     }
+
+    @GetMapping("/api1/demo1")
+    public String demo1(){ return "api1-demo1"; }
+
+    @GetMapping("/api1/demo2")
+    public String demo2(){ return "api1-demo2"; }
+
+    @GetMapping("/api2/demo1")
+    public String demo3(){ return "api2-demo1"; }
+
+    @GetMapping("/api2/demo2")
+    public String demo4(){ return "api2-demo2"; }
 }
