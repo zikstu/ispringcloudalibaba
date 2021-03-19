@@ -7,6 +7,8 @@ spring:
         server-addr: localhost:8848
         namespace: public
         group: SEATA_GROUP
+      discovery:
+        server-addr: localhost:8848
     alibaba:
       seata:
         tx-service-group: ${spring.application.name}

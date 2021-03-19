@@ -38,4 +38,9 @@ public class OrderController {
 
         return "success";
     }
+
+    @GetMapping("/hello")
+    public String hello(){
+        return "Hello World";
+    }
 }
