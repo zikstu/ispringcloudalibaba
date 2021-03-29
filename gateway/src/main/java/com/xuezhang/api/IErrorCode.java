@@ -2,7 +2,7 @@ package com.xuezhang.api;
 
 /**
  * 封装API的错误码
- * Created by macro on 2019/4/19.
+ * 学长.
  */
 public interface IErrorCode {
     long getCode();
